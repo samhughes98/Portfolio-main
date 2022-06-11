@@ -18,6 +18,10 @@ li {
   list-style: none;
 }
 
+a{
+  cursor: pointer;
+}
+
 #navtitle {
   margin-bottom: 40px;
   margin-top: -60px;
@@ -25,12 +29,14 @@ li {
   width: 15vw;
   text-align: center;
   font-family: "RF";
+  border-bottom: 2px solid #FF4C29
 }
 
 .navbar {
   position:fixed;
   width:17vw;
-  height: 50vw;
+  max-width:17vw;
+  height: 100%;
   overflow: hidden;
   font-family: "RF";
   font-size: 140%;
@@ -46,6 +52,10 @@ li {
 
 #navlinks {
   font-size: 100%;
+}
+
+#logo{
+  height:130%; width: 130%; margin-left:-40px; margin-bottom:-50px;
 }
 
 
@@ -270,5 +280,133 @@ li {
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+#mobilebar{
+  display:none;
+}
+
+/* Mobile friendly design*/
+
+@media screen and (max-width: 600px){
+
+  body{
+     width:100%;
+  }
+
+.navbar,.navbar-expand-lg .navbar-nav {
+    height:40%;
+    flex-direction: row;
+    min-width:100% !important;
+    position:absolute;
+    background-color: #082032 !important;
+  }
+
+  #navtitle{
+    border:none;
+  }
+
+  #navdiv, #navlinks, #navtitle{
+    font-size:10px;
+    width:100%;
+
+  }
+
+  #logo {
+    width:250%;
+  }
+
+  #mobilebar{
+    text-align: center;
+    display:block;
+    margin-top:7px;
+    margin-left:-20px;
+    position:relative;
+    width:50px;
+    background-color: #FF4C29;
+  }
+
+  #navtitle{
+    margin-top:-40px;
+    margin-left:140px;
+    width:20%;
+    font-size:5px;
+  }
+
+  .nav-item{
+    position:absolute;
+    font-size:10px;
+    margin-top:10px;
+
+  }
+
+  .navbar-brand{
+   display:none;
+  }
+
+  #navdiv{
+    width:100%;
+  }
+
+  #maincontent, #maincontent1 {
+    width:100%;
+    font-size:12px;
+    position:absolute;
+    margin-left:140px;
+    margin-top:230px;
+    z-index: 9999999;
+  }
+
+  #maincontent1{
+    margin-top:250px;
+  }
+
+
+  #socialsbar {
+    display: none;
+  }
+  #popups {
+    display: none;
+  }
+}
+
+.line{
+  display:inline-block;
+  height:2px;
+  width:10px;
+  background-color: #FF4C29;
+  position:absolute;
+}
+
+#mobilebar .line:nth-last-child(1) {
+  animation: loadingB 1.5s 1s infinite;
+}
+#mobilebar .line:nth-last-child(2) {
+  animation: loadingB1 1.5s 0.5s infinite;
+}
+
+
+@keyframes loadingB {
+  0% {
+    width: 25px;
+  }
+  50% {
+    width: 60px;
+  }
+  100% {
+    width: 25px;
+  }
+}
+
+@keyframes loadingB1 {
+  0% {
+    width: 50px;
+  }
+  50% {
+    width: 110px;
+  }
+  100% {
+    width: 50px;
   }
 }

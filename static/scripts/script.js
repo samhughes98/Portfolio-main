@@ -1,12 +1,18 @@
+function once(){}
+
+function resety() {
+  resety = once();
+  window.scrollTo(0, 0);
+}
+
+resety();
+
 document.addEventListener("DOMContentLoaded", function () {
   //on page load print stylised title
   var x = document.getElementById("maincontent");
   var y = document.getElementById("maincontent1");
 
-  if (window.pageYOffset < 700) {
-    window.scrollTo(0,0);
-  }
-  const introtext = "Hi! My Name Is Sam.";
+  const introtext = "Hi! My Name Is Sam.\n";
   const introtext2 = " I'm a Web Developer.";
   let letter = 0;
   let letter1 = 0;
