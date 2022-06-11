@@ -6,8 +6,8 @@
 body {
   background-color: #082032;
   font-family: "RF";
-  height: 100%;
-  width: 100%;
+  height: 100vw;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -19,16 +19,17 @@ li {
   margin-bottom: 40px;
   margin-top: -60px;
   padding-bottom: 10px;
-  width: 31vh;
+  width: 15vw;
   text-align: center;
   font-family: "RF";
 }
 
 .navbar {
+  width:18vw;
+  height: 50vw;
   overflow: hidden;
   font-family: "RF";
   font-size: 140%;
-  height: 100em;
   flex-direction: column;
   text-align: center;
 }
@@ -43,15 +44,6 @@ li {
   font-size: 100%;
 }
 
-@media (min-width: 992px) {
-  .navbar {
-    width: 18%;
-    height: 100vh;
-  }
-  #navdiv {
-    width: 14em;
-  }
-}
 
 .navbar-expand-lg .navbar-nav {
   flex-direction: column;
