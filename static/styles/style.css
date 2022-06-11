@@ -55,9 +55,9 @@ li {
 
 #socialsbar {
   position:fixed;
-  height: 22em;
+  height: 19em;
   width: 3%;
-  top:17em;
+  top:19em;
   right:0px;
   background-color: #2c394b;
   border-radius: 13px 0px 0px 13px;
@@ -67,7 +67,7 @@ li {
 /* Styling icons */
 .icon-list {
   margin-right: 10px;
-  margin-top: 35px;
+  margin-top: 20px;
   top: 280px;
   right: 40%;
 }
@@ -89,23 +89,33 @@ li {
 
 #popups {
   position:fixed;
-  right:0px;
-  margin-top: 20em;
+  right:-30px;
+  margin-top: 35.5vh;
   color: white;
   white-space: nowrap;
   z-index: 9999999;
-
+  text-align: center;
 }
 
 #popup1 {
   display: none;
   margin-right:100px;
+  width:200px;
+  height:35px;
+  border: 1px solid #FF4C29;
+  border-radius: 5px;
+  background-color: #2c394b;
 }
 
 #popup2 {
   display: none;
-  margin-top: 40px;
+  margin-top: 45px;
   margin-right:100px;
+  width:200px;
+  height:35px;
+  border: 1px solid #FF4C29;
+  border-radius: 5px;
+  background-color: #2c394b;
 }
 
 #popup3 {
@@ -113,6 +123,11 @@ li {
   margin-top:90px;
   z-index: 9999999;
   margin-right:100px;
+  width:200px;
+  height:35px;
+  border: 1px solid #FF4C29;
+  border-radius: 5px;
+  background-color: #2c394b;
 }
 
 #popup4 {
@@ -120,20 +135,35 @@ li {
   margin-top: 140px;
   z-index: 9999999;
   margin-right:100px;
+  width:200px;
+  height:35px;
+  border: 1px solid #FF4C29;
+  border-radius: 5px;
+  background-color: #2c394b;
 }
 
 #popup5 {
   display: none;
-  margin-top: 190px;
+  margin-top: 185px;
   z-index: 9999999;
   margin-right:100px;
+  width:200px;
+  height:35px;
+  border: 1px solid #FF4C29;
+  border-radius: 5px;
+  background-color: #2c394b;
 }
 
 #popup6 {
   display: none;
-  margin-top: 225px;
+  margin-top: 230px;
   z-index: 9999999;
   margin-right:100px;
+  width:200px;
+  height:35px;
+  border: 1px solid #FF4C29;
+  border-radius: 5px;
+  background-color: #2c394b;
 }
 
 #maincontent {
@@ -160,6 +190,7 @@ li {
 #aboutme{
   margin-left: 80px;
   width:84%;
+  height:160vh;
   position:absolute;
   text-align: left;
   top:100vh;
@@ -168,6 +199,57 @@ li {
 }
 
 #aboutme p{
+  color:white;
+  font-size: 50px;
+  margin-top:5vh;
+}
+
+#myproj{
+  margin-left: 80px;
+  width:84%;
+  height:140vh;
+  position:absolute;
+  text-align: left;
+  top:200vh;
+  left:17vw;
+  animation: 1.5s anim-lineUp ease-out;
+}
+
+#myproj p{
+  color:white;
+  font-size: 50px;
+  margin-top:5vh;
+}
+
+#mylinks{
+  margin-left: 80px;
+  width:84%;
+  height:100vh;
+  position:absolute;
+  text-align: left;
+  top:280vh;
+  left:17vw;
+  animation: 1.5s anim-lineUp ease-out;
+}
+
+#mylinks p{
+  color:white;
+  font-size: 50px;
+  margin-top:5vh;
+}
+
+#contactme{
+  margin-left: 80px;
+  width:84%;
+  height:100vh;
+  position:absolute;
+  text-align: left;
+  top:380vh;
+  left:17vw;
+  animation: 1.5s anim-lineUp ease-out;
+}
+
+#contactme p{
   color:white;
   font-size: 50px;
   margin-top:5vh;

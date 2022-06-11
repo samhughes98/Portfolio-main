@@ -21,12 +21,12 @@
        
    </div>
    <div id="popups">
-        <div id="popup1"">View my Instagram</div>
-        <div id="popup2" >View my Facebook</div>
-        <div id="popup3" >View my twitter</div>
-        <div id="popup4" >View my Linkedin</div>
-        <div id="popup5" >View my Google</div>
-        <div id="popup6" >View my Youtube</div>
+        <div id="popup1""><span style="line-height:35px;">View my Instagram</span></div>
+        <div id="popup2" ><span style="line-height:35px;">View my Facebook</span></div>
+        <div id="popup3" ><span style="line-height:35px;">View my twitter</span></div>
+        <div id="popup4" ><span style="line-height:35px;">View my Linkedin</span></div>
+        <div id="popup5" ><span style="line-height:35px;">View my Google</span></div>
+        <div id="popup6" ><span style="line-height:35px;">View my Youtube</span></div>
     </div>
         <div id="socialsbar">
             <div class="icon-list">
@@ -77,11 +77,11 @@
                 </li>
                 <br>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"">My Links</a>
+                  <a class="nav-link" href="#" id="linksbtn" onclick="scrollToLinks()">My Links</a>
                 </li>
                 <br>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"">Contact me!</a>
+                    <a class="nav-link" href="#" id="contactbtn" onclick="scrollToContact()">Contact me!</a>
                 </li>
                 <br><br><br><br><br>
                 <p style="font-size:65%">Created solely by Sam Hughes</p>
@@ -96,15 +96,25 @@
             <p style="font-size:20px">- Front-end web development<br/>- Python Development<br/>- C++ development<br/>- Cyber security</p>
         </div>
 
+        <div id="myproj" style="display:none">
+            <p> My projects </p>
+            <p style="font-size:30px"> Feel free to explore my completed projects! </p>
+        </div>
+
+        <div id="mylinks" style="display:none">
+            <p> Based in Worcestershire, England. </p>
+            <br/>
+            <p style="font-size:40px"> My specialties: </p>
+        </div>
+
+        <div id="contactme" style="display:none">
+            <p> Want to get in touch? </p>
+        </div>
+
     </div>
 
 
     <!-- script files and internal scripts -->
-    <script>
-        window.onload = function () {
-            window.scrollTo(0, 0);
-          }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="static/scripts/textanimation.js"></script>
