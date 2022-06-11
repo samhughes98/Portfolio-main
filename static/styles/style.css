@@ -8,7 +8,10 @@ body {
   font-family: "RF";
   height: 100vw;
   width: 100vw;
-  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 li {
@@ -25,7 +28,8 @@ li {
 }
 
 .navbar {
-  width:18vw;
+  position:fixed;
+  width:17vw;
   height: 50vw;
   overflow: hidden;
   font-family: "RF";
@@ -50,12 +54,12 @@ li {
 }
 
 #socialsbar {
-  display: flex;
+  position:fixed;
   height: 22em;
   width: 3%;
-  margin-top: 17em;
+  top:17em;
+  right:0px;
   background-color: #2c394b;
-  float: right;
   border-radius: 13px 0px 0px 13px;
   z-index:9999999;
 }
@@ -66,7 +70,6 @@ li {
   margin-top: 35px;
   top: 280px;
   right: 40%;
-  z-index:9999999;
 }
 
 .icon-list a {
@@ -76,7 +79,6 @@ li {
   color: white;
   font-size: 20px;
   float: right;
-  z-index:9999999;
 }
 
 /* HOver affect on icons */
@@ -86,8 +88,8 @@ li {
 }
 
 #popups {
-  position: absolute;
-  margin-left: 105em;
+  position:fixed;
+  right:0px;
   margin-top: 20em;
   color: white;
   white-space: nowrap;
@@ -97,43 +99,41 @@ li {
 
 #popup1 {
   display: none;
-  position: absolute;
-  z-index: 9999999;
+  margin-right:100px;
 }
 
 #popup2 {
   display: none;
-  margin-top: 45px;
-  position: absolute;
-  z-index: 9999999;
+  margin-top: 40px;
+  margin-right:100px;
 }
 
 #popup3 {
   display: none;
-  margin-top: 90px;
-  position: absolute;
+  margin-top:90px;
   z-index: 9999999;
+  margin-right:100px;
 }
 
 #popup4 {
   display: none;
-  margin-top: 135px;
-  position: absolute;
+  margin-top: 140px;
   z-index: 9999999;
+  margin-right:100px;
 }
 
 #popup5 {
   display: none;
-  margin-top: 180px;
-  position: absolute;
+  margin-top: 190px;
   z-index: 9999999;
+  margin-right:100px;
 }
 
 #popup6 {
   display: none;
-  margin-top: 230px;
-  position: absolute;
+  margin-top: 225px;
   z-index: 9999999;
+  margin-right:100px;
 }
 
 #maincontent {
@@ -156,161 +156,37 @@ li {
     font-size: 50px;
   }
   
-  .ghost-canvas{
-    position: absolute;
-    float:right;
-    margin-left:0px;
-    margin-top:500px;
-    width: 600px;
-    height: 400px;
-    margin: 100px auto 0 auto;
+
+#aboutme{
+  margin-left: 80px;
+  width:84%;
+  position:absolute;
+  text-align: left;
+  top:100vh;
+  left:17vw;
+  animation: 1.5s anim-lineUp ease-out;
 }
 
-.ghost-body{
-    position: absolute;
-    height: 28%;
-    width: 22%;
-    background-color: white;
-    left: 40%;
-    top:  33%;
-  /*ANIMATION START*/
-    animation-name: floating;
-    animation-duration: 10s;
-    animation-timing-function:linear;
-    animation-iteration-count: infinite;
-  /*ANIMATION END*/
-}
-.ghost-body-copy{
-    position: absolute;
-    height: 28%;
-    width: 22%;
-    background-color: white;
-    left: 40%;
-    top:  33%;
-    z-index: 1;
+#aboutme p{
+  color:white;
+  font-size: 50px;
+  margin-top:5vh;
 }
 
-.ghost-head{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: -50%;
-    background-color: white;
-    border-radius: 90px;
-    
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
-.eye-right{
-    position: absolute;
-    height: 22%;
-    width: 20%;
-    right: 22%;
-    top: 40%;
-    background-color: black;
-    border-radius: 50%;
-}
-.eye-left{
-    position: absolute;
-    height: 22%;
-    width: 20%;
-    left: 22%;
-    top: 40%;
-    background-color: black;
-    border-radius: 50%;
-}
-.mouth{
-    position: absolute;
-    height: 26%;
-    width: 24%;
-    left: 38%;
-    top: 70%;
-    background-color: black;
-    border-radius: 50%;
-    z-index: 2
-}
-.down-bubble{
-    position: absolute;
-    height: 55%;
-    width: 100%;
-    top:70%;
-}
-
-.bubble-1{
-    position: absolute;
-    height: 100%;
-    width:25%;
-    background-color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-  /*ANIMATION START*/
-    animation-name: bubble;
-    animation-duration: 2.8s;
-    animation-iteration-count: infinite;
-    animation-timing-function:ease-in-out;
-  /*ANIMATION END*/
-}
-.bubble-2{
-    position: absolute;
-    height: 100%;
-    width:25%;
-    left: 25%;
-    background-color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-  /*ANIMATION START*/
-    animation-name: bubble;
-    animation-duration: 3.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function:ease-in-out;
-  /*ANIMATION END*/
-}
-.bubble-3{
-    position: absolute;
-    height: 100%;
-    width:25%;
-    right: 25%;
-    background-color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-  /*ANIMATION START*/
-    animation-name: bubble;
-    animation-duration: 3.4s;
-    animation-iteration-count: infinite;
-    animation-timing-function:ease-in-out;
-  /*ANIMATION END*/
-}
-.bubble-4{
-    position: absolute;
-    height: 100%;
-    width:25%;
-    right: 0;
-    background-color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-  /*ANIMATION START*/
-    animation-name: bubble;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function:ease-in-out;
-  /*ANIMATION END*/
-}
-
-/*ANIMATION START*/
-@keyframes bubble{
-    0%{
-        top: 0;
-    }
-    50%{
-        top:20%;
-    }
-     100%{
-        top: 0;
-    }
-}
-@keyframes floating{
-    0%{top: 33%;}
-    30%{top: 40%;}
-    50%{top:33%;}
-    70%{top:25%;}
-    100%{top:33%;}
-}
-/*ANIMATION END*/

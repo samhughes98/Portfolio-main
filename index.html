@@ -12,40 +12,22 @@
 </head>
 <body>
 
-
+    <div class="container-flex">
+        
     <div id="maincontent">
 
-     </div>
-     <div id="maincontent1">
-        <div class="ghost-canvas">
-            <div class="ghost-body">
-                <div class="ghost-body-copy">
-                    
-                </div>
-                <div class="ghost-head">
-                    <div class="eye-left"></div>
-                    <div class="eye-right"></div>
-                    <div class="mouth"></div>
-                </div>
-                <div class="down-bubble">
-                    <div class="bubble-1"></div>
-                    <div class="bubble-2"></div>
-                    <div class="bubble-3"></div>
-                    <div class="bubble-4"></div>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <div class="container-flex">
-        <div id="popups">
-            <div id="popup1"">View my Instagram</div>
-            <div id="popup2" >View my Facebook</div>
-            <div id="popup3" >View my twitter</div>
-            <div id="popup4" >View my Linkedin</div>
-            <div id="popup5" >View my Google</div>
-            <div id="popup6" >View my Youtube</div>
-        </div>
+    <div id="maincontent1">
+       
+   </div>
+   <div id="popups">
+        <div id="popup1"">View my Instagram</div>
+        <div id="popup2" >View my Facebook</div>
+        <div id="popup3" >View my twitter</div>
+        <div id="popup4" >View my Linkedin</div>
+        <div id="popup5" >View my Google</div>
+        <div id="popup6" >View my Youtube</div>
+    </div>
         <div id="socialsbar">
             <div class="icon-list">
                 <a href="#instagram" id="instagram">
@@ -87,11 +69,11 @@
               <ul class="navbar-nav mr-auto">
                 <br>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About me</a>
+                  <a class="nav-link" href="#" id="aboutmebtn" onclick="scrollToAm()">About me</a>
                 </li>
                 <br>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">My Projects</a>
+                  <a class="nav-link" href="#" id="projbtn" onclick="scrollToProj()">My Projects</a>
                 </li>
                 <br>
                 <li class="nav-item">
@@ -107,15 +89,26 @@
             </div>
           </nav>
 
-
+        <div id="aboutme" style="display:none">
+            <p> Based in Worcestershire, England. </p>
+            <br/><br/>
+            <p style="font-size:40px"> My specialties: </p>
+            <p style="font-size:20px">- Front-end web development<br/>- Python Development<br/>- C++ development<br/>- Cyber security</p>
+        </div>
 
     </div>
 
 
-    <!-- Bootstrap JS Bundle with Popper -->
+    <!-- script files and internal scripts -->
+    <script>
+        window.onload = function () {
+            window.scrollTo(0, 0);
+          }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="static/scripts/textanimation.js"></script>
     <script src="static/scripts/script.js"></script>
+    <script src="C:\Users\samhu\Documents\waypoints\lib\noframework.waypoints.min.js"></script>
 </body>
 </html>
