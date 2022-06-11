@@ -110,39 +110,27 @@ el5.addEventListener("mouseout", function handleMouseOut5() {
 
 //scroll functions
 const scrollToAm = () => {
-  const scrollaboutme = document.getElementById("aboutmebtn");
-  scrollaboutme.addEventListener("click", () => {
     var aboutmediv = document.getElementById("aboutme");
     aboutmediv.style.display = "block";
     window.scrollTo({ top: aboutmediv.offsetTop, behavior: "smooth" });
-  });
 };
 
 const scrollToProj = () => {
-  const scrollproj = document.getElementById("projbtn");
-  scrollproj.addEventListener("click", () => {
     var myprojdiv = document.getElementById("myproj");
     myprojdiv.style.display = "block";
     window.scrollTo({ top: myprojdiv.offsetTop, behavior: "smooth" });
-  });
 };
 
 const scrollToLinks = () => {
-  const scrolllinks = document.getElementById("linksbtn");
-  scrolllinks.addEventListener("click", () => {
     var mylinksdiv = document.getElementById("mylinks");
     mylinksdiv.style.display = "block";
     window.scrollTo({ top: mylinksdiv.offsetTop, behavior: "smooth" });
-  });
 };
 
 const scrollToContact = () => {
-  const scrollcontact = document.getElementById("contactbtn");
-  scrollcontact.addEventListener("click", () => {
     var contactmediv = document.getElementById("contactme");
     contactmediv.style.display = "block";
     window.scrollTo({ top: contactmediv.offsetTop, behavior: "smooth" });
-  });
 };
 
 function testScroll(ev) {

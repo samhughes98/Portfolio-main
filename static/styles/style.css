@@ -18,7 +18,7 @@ li {
   list-style: none;
 }
 
-a{
+a {
   cursor: pointer;
 }
 
@@ -29,13 +29,13 @@ a{
   width: 15vw;
   text-align: center;
   font-family: "RF";
-  border-bottom: 2px solid #FF4C29
+  border-bottom: 2px solid #ff4c29;
 }
 
 .navbar {
-  position:fixed;
-  width:17vw;
-  max-width:17vw;
+  position: fixed;
+  width: 17vw;
+  max-width: 17vw;
   height: 100%;
   overflow: hidden;
   font-family: "RF";
@@ -54,24 +54,26 @@ a{
   font-size: 100%;
 }
 
-#logo{
-  height:130%; width: 130%; margin-left:-40px; margin-bottom:-50px;
+#logo {
+  height: 130%;
+  width: 130%;
+  margin-left: -40px;
+  margin-bottom: -50px;
 }
-
 
 .navbar-expand-lg .navbar-nav {
   flex-direction: column;
 }
 
 #socialsbar {
-  position:fixed;
+  position: fixed;
   height: 19em;
   width: 3%;
-  top:19em;
-  right:0px;
+  top: 19em;
+  right: 0px;
   background-color: #2c394b;
   border-radius: 13px 0px 0px 13px;
-  z-index:9999999;
+  z-index: 9999999;
 }
 
 /* Styling icons */
@@ -98,8 +100,8 @@ a{
 }
 
 #popups {
-  position:fixed;
-  right:-30px;
+  position: fixed;
+  right: -30px;
   margin-top: 35.5vh;
   color: white;
   white-space: nowrap;
@@ -109,10 +111,10 @@ a{
 
 #popup1 {
   display: none;
-  margin-right:100px;
-  width:200px;
-  height:35px;
-  border: 1px solid #FF4C29;
+  margin-right: 100px;
+  width: 200px;
+  height: 35px;
+  border: 1px solid #ff4c29;
   border-radius: 5px;
   background-color: #2c394b;
 }
@@ -120,22 +122,22 @@ a{
 #popup2 {
   display: none;
   margin-top: 45px;
-  margin-right:100px;
-  width:200px;
-  height:35px;
-  border: 1px solid #FF4C29;
+  margin-right: 100px;
+  width: 200px;
+  height: 35px;
+  border: 1px solid #ff4c29;
   border-radius: 5px;
   background-color: #2c394b;
 }
 
 #popup3 {
   display: none;
-  margin-top:90px;
+  margin-top: 90px;
   z-index: 9999999;
-  margin-right:100px;
-  width:200px;
-  height:35px;
-  border: 1px solid #FF4C29;
+  margin-right: 100px;
+  width: 200px;
+  height: 35px;
+  border: 1px solid #ff4c29;
   border-radius: 5px;
   background-color: #2c394b;
 }
@@ -144,10 +146,10 @@ a{
   display: none;
   margin-top: 140px;
   z-index: 9999999;
-  margin-right:100px;
-  width:200px;
-  height:35px;
-  border: 1px solid #FF4C29;
+  margin-right: 100px;
+  width: 200px;
+  height: 35px;
+  border: 1px solid #ff4c29;
   border-radius: 5px;
   background-color: #2c394b;
 }
@@ -156,10 +158,10 @@ a{
   display: none;
   margin-top: 185px;
   z-index: 9999999;
-  margin-right:100px;
-  width:200px;
-  height:35px;
-  border: 1px solid #FF4C29;
+  margin-right: 100px;
+  width: 200px;
+  height: 35px;
+  border: 1px solid #ff4c29;
   border-radius: 5px;
   background-color: #2c394b;
 }
@@ -168,17 +170,17 @@ a{
   display: none;
   margin-top: 230px;
   z-index: 9999999;
-  margin-right:100px;
-  width:200px;
-  height:35px;
-  border: 1px solid #FF4C29;
+  margin-right: 100px;
+  width: 200px;
+  height: 35px;
+  border: 1px solid #ff4c29;
   border-radius: 5px;
   background-color: #2c394b;
 }
 
 #maincontent {
   width: 55%;
-  height:20%;
+  height: 20%;
   position: absolute;
   color: white;
   margin-left: 400px;
@@ -187,82 +189,81 @@ a{
 }
 
 #maincontent1 {
-    width: 30%;
-    height:10%;
-    position: absolute;
-    color: white;
-    margin-left: 400px;
-    margin-top: 220px;
-    font-size: 50px;
-  }
-  
+  width: 30%;
+  height: 10%;
+  position: absolute;
+  color: white;
+  margin-left: 400px;
+  margin-top: 220px;
+  font-size: 50px;
+}
 
-#aboutme{
+#aboutme {
   margin-left: 80px;
-  width:84%;
-  height:160vh;
-  position:absolute;
+  width: 84%;
+  height: 160vh;
+  position: absolute;
   text-align: left;
-  top:100vh;
-  left:17vw;
+  top: 100vh;
+  left: 17vw;
   animation: 1.5s anim-lineUp ease-out;
 }
 
-#aboutme p{
-  color:white;
+#aboutme p {
+  color: white;
   font-size: 50px;
-  margin-top:5vh;
+  margin-top: 5vh;
 }
 
-#myproj{
+#myproj {
   margin-left: 80px;
-  width:84%;
-  height:140vh;
-  position:absolute;
+  width: 84%;
+  height: 140vh;
+  position: absolute;
   text-align: left;
-  top:200vh;
-  left:17vw;
+  top: 200vh;
+  left: 17vw;
   animation: 1.5s anim-lineUp ease-out;
 }
 
-#myproj p{
-  color:white;
+#myproj p {
+  color: white;
   font-size: 50px;
-  margin-top:5vh;
+  margin-top: 5vh;
 }
 
-#mylinks{
+#mylinks {
   margin-left: 80px;
-  width:84%;
-  height:100vh;
-  position:absolute;
+  width: 84%;
+  height: 100vh;
+  position: absolute;
   text-align: left;
-  top:280vh;
-  left:17vw;
+  top: 280vh;
+  left: 17vw;
   animation: 1.5s anim-lineUp ease-out;
 }
 
-#mylinks p{
-  color:white;
+#mylinks p {
+  color: white;
   font-size: 50px;
-  margin-top:5vh;
+  margin-top: 5vh;
 }
 
-#contactme{
+#contactme {
   margin-left: 80px;
-  width:84%;
-  height:100vh;
-  position:absolute;
+  width: 84%;
+  height: 100vh;
+  position: absolute;
   text-align: left;
-  top:380vh;
-  left:17vw;
+  top: 380vh;
+  left: 17vw;
   animation: 1.5s anim-lineUp ease-out;
 }
 
-#contactme p{
-  color:white;
+#contactme p {
+  color: white;
   font-size: 50px;
-  margin-top:5vh;
+  margin-top: 5vh;
 }
 
 @keyframes anim-lineUp {
@@ -283,100 +284,117 @@ a{
   }
 }
 
-#mobilebar{
-  display:none;
+#mobilebar {
+  display: none;
 }
 
 /* Mobile friendly design*/
 
-@media screen and (max-width: 600px){
-
-  body{
-     width:100%;
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
   }
 
-.navbar,.navbar-expand-lg .navbar-nav {
-    height:40%;
+  .navbar,
+  .navbar-expand-lg .navbar-nav {
+    height: 40%;
     flex-direction: row;
-    min-width:100% !important;
-    position:absolute;
+    min-width: 100% !important;
+    position: absolute;
     background-color: #082032 !important;
   }
 
-  #navtitle{
-    border:none;
+  #navtitle {
+    border: none;
   }
 
-  #navdiv, #navlinks, #navtitle{
-    font-size:10px;
-    width:100%;
-
+  #navdiv,
+  #navlinks,
+  #navtitle {
+    font-size: 10px;
+    width: 100%;
   }
 
   #logo {
-    width:250%;
+    width: 250%;
   }
 
-  #mobilebar{
-    text-align: center;
-    display:block;
-    margin-top:7px;
-    margin-left:-20px;
-    position:relative;
-    width:50px;
-    background-color: #FF4C29;
+  #mobilebar {
+    display: block;
+    margin-top: 17%;
+    margin-left: -39%;
+    position: relative;
+    width: 50px;
+    background-color: #ff4c29;
   }
 
-  #navtitle{
-    margin-top:-40px;
-    margin-left:140px;
-    width:20%;
-    font-size:5px;
+  #navtitle {
+    margin-top: -10%;
+    margin-left: 35%;
+    width: 20%;
+    font-size: 5px;
   }
 
-  .nav-item{
-    position:absolute;
-    font-size:10px;
-    margin-top:10px;
-
+  .nav-item {
+    position: absolute;
+    font-size: 10px;
+    margin-top: 10px;
   }
 
-  .navbar-brand{
-   display:none;
+  .navbar-brand {
+    display: none;
   }
 
-  #navdiv{
-    width:100%;
+  #navdiv {
+    width: 100%;
   }
 
-  #maincontent, #maincontent1 {
-    width:100%;
-    font-size:12px;
-    position:absolute;
-    margin-left:140px;
-    margin-top:230px;
+  #maincontent,
+  #maincontent1 {
+    width: 100%;
+    font-size: 12px;
+    position: absolute;
+    margin-left: 31%;
+    margin-top: 55%;
     z-index: 9999999;
   }
 
-  #maincontent1{
-    margin-top:250px;
+  #maincontent1 {
+    margin-top: 60%;
   }
 
-
-  #socialsbar {
+  #myproj,
+  #mylinks,
+  #aboutme,
+  #contactme {
     display: none;
   }
+
+  #socialsbar {
+    height: 5vh;
+    width: 100%;
+    top: 35%;
+    border-radius: 0;
+  }
+
+  .icon-list {
+    display: inline-block;
+    width:100%;
+    height:100%;
+    margin-bottom:35vh;
+  }
+
   #popups {
     display: none;
   }
 }
 
-.line{
-  display:inline-block;
-  height:2px;
-  width:10px;
-  background-color: #FF4C29;
-  position:absolute;
+.line {
+  display: inline-block;
+  height: 2px;
+  width: 1%;
+  background-color: #ff4c29;
+  position: absolute;
 }
 
 #mobilebar .line:nth-last-child(1) {
@@ -385,7 +403,6 @@ a{
 #mobilebar .line:nth-last-child(2) {
   animation: loadingB1 1.5s 0.5s infinite;
 }
-
 
 @keyframes loadingB {
   0% {
@@ -404,7 +421,7 @@ a{
     width: 50px;
   }
   50% {
-    width: 110px;
+    width: 105px;
   }
   100% {
     width: 50px;
