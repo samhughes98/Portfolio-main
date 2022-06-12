@@ -22,18 +22,6 @@ document.getElementById("submitform").addEventListener("click", function(event){
         namevalid = true;
     }
 
-    if(emailfield.value == ""){
-      emailfield.style.border = "2px solid red";
-      emailfield.placeholder = "Please enter your email address";
-      emailfield.focus();
-      var contactmediv = document.getElementById("contactme");
-      window.scrollTo({ top: contactmediv.offsetTop, behavior: "smooth" })
-    }
-    else if(emailfield.value != ""){
-        emailfield.style.border = "none";
-        emailvalid = true;
-    }
-
     if(subjectfield.value == ""){
       subjectfield.style.border = "2px solid red";
       subjectfield.placeholder = "Please enter your email subject";
@@ -58,13 +46,14 @@ document.getElementById("submitform").addEventListener("click", function(event){
         msgvalid = true;
     }
 
-    if(namevalid && emailvalid && subjectvalid && msgvalid){
-        alert("message sent!");
+    if(namevalid && subjectvalid && msgvalid){
+        document.location = "mailto:"+  "samhughes98@hotmail.co.uk"+"?subject="+subjectfield.value+"&body="+msgfield.value + "%0D%0A%0D%0AFrom, " + namefield.value;
         namefield.value = "";
-        emailfield.value = "";
         subjectfield.value = "";
         msgfield.value = "";
     }
+
+
 
 });
   

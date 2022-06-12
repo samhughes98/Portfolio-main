@@ -117,9 +117,6 @@ a {
   margin-right: 100px;
   width: 200px;
   height: 35px;
-  border: 1px solid #ff4c29;
-  border-radius: 5px;
-  background-color: #2c394b;
 }
 
 #popup2 {
@@ -128,9 +125,6 @@ a {
   margin-right: 100px;
   width: 200px;
   height: 35px;
-  border: 1px solid #ff4c29;
-  border-radius: 5px;
-  background-color: #2c394b;
 }
 
 #popup3 {
@@ -140,9 +134,6 @@ a {
   margin-right: 100px;
   width: 200px;
   height: 35px;
-  border: 1px solid #ff4c29;
-  border-radius: 5px;
-  background-color: #2c394b;
 }
 
 #popup4 {
@@ -152,9 +143,6 @@ a {
   margin-right: 100px;
   width: 200px;
   height: 35px;
-  border: 1px solid #ff4c29;
-  border-radius: 5px;
-  background-color: #2c394b;
 }
 
 #popup5 {
@@ -164,9 +152,6 @@ a {
   margin-right: 100px;
   width: 200px;
   height: 35px;
-  border: 1px solid #ff4c29;
-  border-radius: 5px;
-  background-color: #2c394b;
 }
 
 #popup6 {
@@ -176,9 +161,6 @@ a {
   margin-right: 100px;
   width: 200px;
   height: 35px;
-  border: 1px solid #ff4c29;
-  border-radius: 5px;
-  background-color: #2c394b;
 }
 
 #maincontent {
@@ -225,7 +207,7 @@ a {
   height: 140vh;
   position: absolute;
   text-align: left;
-  top: 200vh;
+  margin-top: 210vh;
   left: 17vw;
   animation: 1.5s anim-lineUp ease-out;
 }
@@ -242,7 +224,7 @@ a {
   height: 100vh;
   position: absolute;
   text-align: left;
-  top: 280vh;
+  top: 300vh;
   left: 17vw;
   animation: 1.5s anim-lineUp ease-out;
 }
@@ -271,7 +253,7 @@ a {
   height: 100vh;
   position: absolute;
   text-align: left;
-  top: 380vh;
+  top: 430vh;
   left: 17vw;
   animation: 1.5s anim-lineUp ease-out;
 }
@@ -475,6 +457,16 @@ a {
 }
 100%{
     width: 9%;
+}
+}
+
+@keyframes grow2
+{
+0% {
+    width: 100%;
+}
+100%{
+    width: 1%;
 }
 }
 

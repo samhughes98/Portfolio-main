@@ -38,6 +38,7 @@ const hiddenDiv = document.getElementById("popup1");
 
 el.addEventListener("mouseover", function handleMouseOver() {
   hiddenDiv.style.display = "block";
+  hiddenDiv.style.animation = "grow2 1.5s";
 });
 
 el.addEventListener("mouseout", function handleMouseOut() {
@@ -50,6 +51,7 @@ const hiddenDiv1 = document.getElementById("popup2");
 
 el1.addEventListener("mouseover", function handleMouseOver1() {
   hiddenDiv1.style.display = "block";
+  hiddenDiv1.style.animation = "grow2 1.5s";
 });
 
 el1.addEventListener("mouseout", function handleMouseOut1() {
@@ -62,6 +64,7 @@ const hiddenDiv2 = document.getElementById("popup3");
 
 el2.addEventListener("mouseover", function handleMouseOver2() {
   hiddenDiv2.style.display = "block";
+  hiddenDiv2.style.animation = "grow2 1.5s";
 });
 
 el2.addEventListener("mouseout", function handleMouseOut2() {
@@ -74,6 +77,7 @@ const hiddenDiv3 = document.getElementById("popup4");
 
 el3.addEventListener("mouseover", function handleMouseOver3() {
   hiddenDiv3.style.display = "block";
+  hiddenDiv3.style.animation = "grow2 1.5s";
 });
 
 el3.addEventListener("mouseout", function handleMouseOut3() {
@@ -86,6 +90,7 @@ const hiddenDiv4 = document.getElementById("popup5");
 
 el4.addEventListener("mouseover", function handleMouseOver4() {
   hiddenDiv4.style.display = "block";
+  hiddenDiv4.style.animation = "grow2 1.5s";
 });
 
 el4.addEventListener("mouseout", function handleMouseOut4() {
@@ -98,6 +103,7 @@ const hiddenDiv5 = document.getElementById("popup6");
 
 el5.addEventListener("mouseover", function handleMouseOver5() {
   hiddenDiv5.style.display = "block";
+  hiddenDiv5.style.animation = "grow2 1.5s";
 });
 
 el5.addEventListener("mouseout", function handleMouseOut5() {
