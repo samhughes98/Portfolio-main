@@ -65,29 +65,33 @@
                         <div class="line"></div>
                         <div class="line" style="margin-top:5px;"></div>
                     </div> 
-                    <a class="navbar-brand" href="#" style="font-size:150%; margin-left:10px; color:white;"> - My Portfolio -</a>
+                    <a class="navbar-brand" onclick="ScrollToHome()" style="font-size:150%; margin-left:10px; color:white;"> - My Portfolio -</a>
                 </div>
             </div>
           
             <div class="collapse navbar-collapse" id="navlinks">
               <ul class="navbar-nav mr-auto">
                 <br>
-                <li class="nav-item">
-                  <a class="nav-link" id="aboutmebtn" onclick="scrollToAm()">About me</a>
+                <li class="nav-item" style="position:fixed; top:40vh;">
+                  <a class="nav-link" id="aboutmebtn" onclick="scrollToAm()" style="margin-left:2vh;">About me</a>
+                  <div id="aboutmeline" style="position:fixed;"></div>
                 </li>
                 <br>
-                <li class="nav-item">
-                  <a class="nav-link"  id="projbtn" onclick="scrollToProj()">My Projects</a>
+                <li class="nav-item" style="position:fixed; top:50vh;">
+                  <a class="nav-link"  id="projbtn" onclick="scrollToProj()" style="margin-left:1.5vh;">My Projects</a>
+                  <div id="myprojline" style="position:fixed;"></div>
                 </li>
                 <br>
-                <li class="nav-item">
-                  <a class="nav-link" id="linksbtn" onclick="scrollToLinks()">My Links</a>
+                <li class="nav-item" style="position:fixed; top:60vh;">
+                  <a class="nav-link" id="linksbtn" onclick="scrollToLinks()" style="margin-left:3vh;">My Links</a>
+                  <div id="mylinksline" style="position:fixed;"></div>
                 </li>
                 <br>
-                <li class="nav-item">
-                    <a class="nav-link" id="contactbtn" onclick="scrollToContact()">Contact me!</a>
+                <li class="nav-item" style="position:fixed; top:70vh;">
+                    <a class="nav-link" id="contactbtn" onclick="scrollToContact()" style="margin-left:1vh;">Contact me!</a>
+                    <div id="contactmeline" style="position:fixed;"></div>
                 </li>
-                <br><br><br><br><br>
+                <br><br><br>
                 <p style="font-size:65%">Created solely by Sam Hughes</p>
               </ul>
             </div>
@@ -107,15 +111,71 @@
         </div>
 
         <div id="mylinks" style="display:none">
-            <p> Based in Worcestershire, England. </p>
+            <p> My socials and links </p>
             <br/>
-            <p style="font-size:40px"> My specialties: </p>
+            <p style="font-size:40px"> </p>
+
+            <div class="row" style="margin-top:25vh;">
+                <div class="col-1"></div>
+                <div class="col-2 justify-items-center" style="text-align:center;">
+                    <a href="#">
+                        <i class="fa fa-github fa-5x"></i>
+                    </a>
+                    <p>Github</p>
+                    </div>
+                <div class="col-2"style="text-align:center;" >
+                    <a href="#">
+                        <i class="fa fa-twitter fa-5x"></i>
+                    </a>
+                    <p>Twitter</p>
+                </div>
+                <div class="col-2" style="text-align:center;">
+                    <a href="#">
+                        <i class="fa fa-linkedin fa-5x"></i>
+                    </a>
+                    <p>LinkedIn</p>
+                    </div>
+                <div class="col-3" style="text-align:center;">
+                    <a href="#">
+                        <i class="fa fa-instagram fa-5x"></i>
+                    </a>
+                    <p>Instagram</p>
+                    </div>
+            </div>
         </div>
 
         <div id="contactme" style="display:none">
             <p> Want to get in touch? </p>
+            <div class="row" style="color:white">
+                <div class="col-6"></div>
+                <form>
+                    <div class="form-group">
+                      <label for="msgname">Name:</label>
+                      <input type="name" class="form-control" id="namefield" aria-describedby="emailHelp">
+                    </div><br>
+                    <div class="form-group">
+                      <label for="msgemail">Email:</label>
+                      <input type="email" class="form-control" id="emailfield">
+                    </div><br><br>
+                    <div class="form-group">
+                        <label for="message">Subject:</label>
+                        <input type="text" class="form-control" id="subjectfield">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea type="text" class="form-control" id="msgfield" style="resize:false;"></textarea>
+                    </div><br>
+     
+     
+                    <button type="submit" class="btn btn-primary" id="submitform">Submit</button>
+                  </form>
+            </div>
         </div>
     </div>
+
+
+
+    <!-- BEGINNING OF MOBILE VERSION OF WEBSITE -->
 
     <div class="container-flex" id="mobilecontainer"> 
         <div class="row justify-content-center h-100" style="margin-top:20vh; margin-left:5vw;">
@@ -195,5 +255,6 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="static/scripts/script.js"></script>
     <script src="static/scripts/mobilescripts.js"></script>
+    <script src="static/scripts/validation.js"></script>
 </body>
 </html>

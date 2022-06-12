@@ -52,6 +52,9 @@ a {
 
 #navlinks {
   font-size: 100%;
+  bottom:0;
+  position:fixed;
+  width:8vw;
 }
 
 #logo {
@@ -250,6 +253,18 @@ a {
   margin-top: 5vh;
 }
 
+#githubdesktop{
+  width:100%;
+  height:100%
+}
+
+#iconrows{
+  display:inline-block;
+}
+#iconrows p{
+  font-size:20%;
+}
+
 #contactme {
   margin-left: 80px;
   width: 84%;
@@ -295,7 +310,8 @@ a {
 #mobilebar,
 #scroller,
 #scrollertext,
-#socials-mobile {
+#socials-mobile,
+#contactmebtn-mobile {
   display: none;
 }
 
@@ -449,4 +465,33 @@ a {
       margin-top: 10%;
     }
   }
+}
+
+
+@keyframes grow
+{
+0% {
+    width: 1%;
+}
+100%{
+    width: 9%;
+}
+}
+
+.form-control{
+  width:30%;
+}
+
+#namefield, #emailfield{
+  width:20%;
+}
+
+#subjectfield{
+  width:25%;
+}
+
+
+#msgfield{
+  width:40vw;
+    height:40vh;
 }

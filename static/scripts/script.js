@@ -1,16 +1,12 @@
-function once(){}
-
-function resety() {
-  resety = once();
-  window.scrollTo(0, 0);
-}
-
-resety();
-
 document.addEventListener("DOMContentLoaded", function () {
   //on page load print stylised title
   var x = document.getElementById("maincontent");
   var y = document.getElementById("maincontent1");
+  window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth',
+  });
 
   const introtext = "Hi! My Name Is Sam.\n";
   const introtext2 = " I'm a Web Developer.";
@@ -108,29 +104,88 @@ el5.addEventListener("mouseout", function handleMouseOut5() {
   hiddenDiv5.style.display = "none";
 });
 
+var clearlines = document.getElementById("aboutmeline");
+var clearlines1 = document.getElementById("myprojline");
+var clearlines2 = document.getElementById("mylinksline");
+var clearlines3 = document.getElementById("contactmeline");
+
 //scroll functions
+
+const ScrollToHome = () => {
+  window.scrollTo(0,0);
+
+  clearlines.style.borderBottom = "none";
+  clearlines.style.animation = "none"
+  clearlines1.style.borderBottom = "none";
+  clearlines1.style.animation = "none"
+  clearlines2.style.borderBottom = "none";
+  clearlines2.style.animation = "none"
+  clearlines3.style.borderBottom = "none";
+  clearlines3.style.animation = "none"
+
+};
 const scrollToAm = () => {
-    var aboutmediv = document.getElementById("aboutme");
-    aboutmediv.style.display = "block";
-    window.scrollTo({ top: aboutmediv.offsetTop, behavior: "smooth" });
+  var aboutmediv = document.getElementById("aboutme");
+  var aboutmeline = document.getElementById("aboutmeline");
+  aboutmeline.style.borderBottom = "2px solid grey";
+  aboutmeline.style.animation = "grow 1s forwards";
+  aboutmediv.style.display = "block";
+  window.scrollTo({ top: aboutmediv.offsetTop, behavior: "smooth" });
+
+  clearlines1.style.borderBottom = "none";
+  clearlines1.style.animation = "none"
+  clearlines2.style.borderBottom = "none";
+  clearlines2.style.animation = "none"
+  clearlines3.style.borderBottom = "none";
+  clearlines3.style.animation = "none"
 };
 
 const scrollToProj = () => {
-    var myprojdiv = document.getElementById("myproj");
-    myprojdiv.style.display = "block";
-    window.scrollTo({ top: myprojdiv.offsetTop, behavior: "smooth" });
-};
+  var myprojdiv = document.getElementById("myproj");
+  var myprojline = document.getElementById("myprojline");
+  myprojline.style.borderBottom = "2px solid grey";
+  myprojline.style.animation = "grow 1s forwards";
+  myprojdiv.style.display = "block";
+  window.scrollTo({ top: myprojdiv.offsetTop, behavior: "smooth" });
+
+  clearlines.style.borderBottom = "none";
+  clearlines.style.animation = "none"
+  clearlines2.style.borderBottom = "none";
+  clearlines2.style.animation = "none"
+  clearlines3.style.borderBottom = "none";
+  clearlines3.style.animation = "none"
+}
 
 const scrollToLinks = () => {
-    var mylinksdiv = document.getElementById("mylinks");
-    mylinksdiv.style.display = "block";
-    window.scrollTo({ top: mylinksdiv.offsetTop, behavior: "smooth" });
+  var mylinksdiv = document.getElementById("mylinks");
+  var mylinksline = document.getElementById("mylinksline");
+  mylinksline.style.borderBottom = "2px solid grey";
+  mylinksline.style.animation = "grow 1s forwards";
+  mylinksdiv.style.display = "block";
+  window.scrollTo({ top: mylinksdiv.offsetTop, behavior: "smooth" });
+
+  clearlines1.style.borderBottom = "none";
+  clearlines1.style.animation = "none"
+  clearlines.style.borderBottom = "none";
+  clearlines.style.animation = "none"
+  clearlines3.style.borderBottom = "none";
+  clearlines3.style.animation = "none"
 };
 
 const scrollToContact = () => {
-    var contactmediv = document.getElementById("contactme");
-    contactmediv.style.display = "block";
-    window.scrollTo({ top: contactmediv.offsetTop, behavior: "smooth" });
+  var contactmediv = document.getElementById("contactme");
+  var contactmeline = document.getElementById("contactmeline");
+  contactmeline.style.borderBottom = "2px solid grey";
+  contactmeline.style.animation = "grow 1s forwards";
+  contactmediv.style.display = "block";
+  window.scrollTo({ top: contactmediv.offsetTop, behavior: "smooth" });
+
+  clearlines1.style.borderBottom = "none";
+  clearlines1.style.animation = "none"
+  clearlines2.style.borderBottom = "none";
+  clearlines2.style.animation = "none"
+  clearlines.style.borderBottom = "none";
+  clearlines.style.animation = "none"
 };
 
 function testScroll(ev) {
@@ -154,6 +209,5 @@ function testScroll(ev) {
     contactmediv.style.display = "block";
   }
 }
-
 
 window.onscroll = testScroll;
