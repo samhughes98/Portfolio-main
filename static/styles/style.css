@@ -319,6 +319,7 @@ a {
     display:block;
     width: 100%;
     margin-top: 2vh;
+    margin-left:14.5vw;
   }
 
   #typewriter {
@@ -335,13 +336,14 @@ a {
     margin-top: 5vh;
     color: white;
     font-size: 100%;
+    margin-left:5vw;
   }
 
   #mobilebar {
     display: block;
-    float: left;
+    margin-left:14.5vw;
     margin-top: 1vh;
-    width: 50px;
+    width: 40px;
     background-color: #ff4c29;
   }
 
@@ -365,7 +367,7 @@ a {
       width: 10%;
     }
     50% {
-      width: 22%;
+      width: 20%;
     }
     100% {
       width: 10%;
@@ -377,7 +379,7 @@ a {
       width: 20%;
     }
     50% {
-      width: 42%;
+      width: 40%;
     }
     100% {
       width: 20%;
@@ -408,6 +410,7 @@ a {
     position:relative;
     height:auto;
     width:100%;
+    margin-right:10px;
   }
 
   #socials-mobile a{
@@ -486,4 +489,15 @@ a {
 #msgfield{
   width:40vw;
     height:40vh;
+}
+
+@media screen and (max-width: 950px)  {
+
+
+
+  #main-content{
+    left:0px;}
+  #socialsbar{
+    width:20vw;
+  }
 }

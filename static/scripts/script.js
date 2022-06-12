@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var x = document.getElementById("maincontent");
   var y = document.getElementById("maincontent1");
   window.scroll({
-    top: 0, 
-    left: 0, 
-    behavior: 'smooth',
+    top: 0,
+    left: 0,
+    behavior: "smooth",
   });
 
   const introtext = "Hi! My Name Is Sam.\n";
@@ -118,17 +118,16 @@ var clearlines3 = document.getElementById("contactmeline");
 //scroll functions
 
 const ScrollToHome = () => {
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 
   clearlines.style.borderBottom = "none";
-  clearlines.style.animation = "none"
+  clearlines.style.animation = "none";
   clearlines1.style.borderBottom = "none";
-  clearlines1.style.animation = "none"
+  clearlines1.style.animation = "none";
   clearlines2.style.borderBottom = "none";
-  clearlines2.style.animation = "none"
+  clearlines2.style.animation = "none";
   clearlines3.style.borderBottom = "none";
-  clearlines3.style.animation = "none"
-
+  clearlines3.style.animation = "none";
 };
 const scrollToAm = () => {
   var aboutmediv = document.getElementById("aboutme");
@@ -139,11 +138,11 @@ const scrollToAm = () => {
   window.scrollTo({ top: aboutmediv.offsetTop, behavior: "smooth" });
 
   clearlines1.style.borderBottom = "none";
-  clearlines1.style.animation = "none"
+  clearlines1.style.animation = "none";
   clearlines2.style.borderBottom = "none";
-  clearlines2.style.animation = "none"
+  clearlines2.style.animation = "none";
   clearlines3.style.borderBottom = "none";
-  clearlines3.style.animation = "none"
+  clearlines3.style.animation = "none";
 };
 
 const scrollToProj = () => {
@@ -155,12 +154,12 @@ const scrollToProj = () => {
   window.scrollTo({ top: myprojdiv.offsetTop, behavior: "smooth" });
 
   clearlines.style.borderBottom = "none";
-  clearlines.style.animation = "none"
+  clearlines.style.animation = "none";
   clearlines2.style.borderBottom = "none";
-  clearlines2.style.animation = "none"
+  clearlines2.style.animation = "none";
   clearlines3.style.borderBottom = "none";
-  clearlines3.style.animation = "none"
-}
+  clearlines3.style.animation = "none";
+};
 
 const scrollToLinks = () => {
   var mylinksdiv = document.getElementById("mylinks");
@@ -171,11 +170,11 @@ const scrollToLinks = () => {
   window.scrollTo({ top: mylinksdiv.offsetTop, behavior: "smooth" });
 
   clearlines1.style.borderBottom = "none";
-  clearlines1.style.animation = "none"
+  clearlines1.style.animation = "none";
   clearlines.style.borderBottom = "none";
-  clearlines.style.animation = "none"
+  clearlines.style.animation = "none";
   clearlines3.style.borderBottom = "none";
-  clearlines3.style.animation = "none"
+  clearlines3.style.animation = "none";
 };
 
 const scrollToContact = () => {
@@ -187,11 +186,11 @@ const scrollToContact = () => {
   window.scrollTo({ top: contactmediv.offsetTop, behavior: "smooth" });
 
   clearlines1.style.borderBottom = "none";
-  clearlines1.style.animation = "none"
+  clearlines1.style.animation = "none";
   clearlines2.style.borderBottom = "none";
-  clearlines2.style.animation = "none"
+  clearlines2.style.animation = "none";
   clearlines.style.borderBottom = "none";
-  clearlines.style.animation = "none"
+  clearlines.style.animation = "none";
 };
 
 function testScroll(ev) {
