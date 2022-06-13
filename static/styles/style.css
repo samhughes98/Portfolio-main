@@ -160,13 +160,13 @@ a {
 }
 
 #maincontent {
-  width: 100%;
+  width: 80vw;
   height: 20%;
   position: absolute;
   color: white;
   margin-left: 20vw;
   margin-top: 10vh;
-  font-size: 5em;
+  font-size: 4.8em;
 }
 
 #maincontent1 {
@@ -294,7 +294,7 @@ a {
 
 /* Mobile friendly design*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 912px){
   #desktopview {
     display: none;
   }
@@ -486,13 +486,3 @@ a {
     height:40vh;
 }
 
-@media screen and (max-width: 950px)  {
-
-
-
-  #main-content{
-    left:0px;}
-  #socialsbar{
-    width:20vw;
-  }
-}
