@@ -116,6 +116,11 @@ var clearlines2 = document.getElementById("mylinksline");
 var clearlines3 = document.getElementById("contactmeline");
 
 //scroll functions
+function contactmescrollbtn() {
+  var contactmedivbtn = document.getElementById("contactme");
+  contactmedivbtn.style.display = "block";
+  window.scrollTo({ top: 4000, behavior: "smooth" });
+}
 
 const ScrollToHome = () => {
   window.scrollTo(0, 0);

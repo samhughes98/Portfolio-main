@@ -19,7 +19,13 @@
 
     </div>
     <div id="maincontent1">
-       
+        <div class="row justify-content-center">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <button id="contactmebtn-desktop" onClick="contactmescrollbtn()"><p id="btntext">Get In touch!</p></button>
+            </div>
+            <div class="col-3"></div>
+          </div>
    </div>
    <div id="popups">
         <div id="popup1" ><span style="line-height:35px;">View my Github</span></div>
@@ -30,7 +36,13 @@
         <div id="popup6" ><span style="line-height:35px;">View my Youtube</span></div>
     </div>
 
+    <div>
+        <p id="socialsarrowtext">My Socials!</p>
+        <img src="static/styles/images/arrow.png" id="socialsarrow">
+    </div>
+
         <div id="socialsbar">
+            
             <div class="icon-list">
                 <a href="https://github.com/samhughes98" id="instagram">
                     <i class="fa fa-github"></i>
@@ -67,34 +79,34 @@
                         <div class="line"></div>
                         <div class="line" style="margin-top:5px;"></div>
                     </div> 
-                    <a class="navbar-brand" onclick="ScrollToHome()" style="font-size:1em; margin-left:10px; color:white;"> - My Portfolio -</a>
+                    <a class="navbar-brand" onclick="ScrollToHome()" style="font-size:1em; margin-right:0.8vw; color:white;"> - My Portfolio -</a>
                 </div>
             </div>
           
             <div class="collapse navbar-collapse" id="navlinks">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav" style="margin-right:0.7vw;text-align:center;">
                 <br>
-                <li class="nav-item" style=" top:40vh;">
+                <li class="nav-item" style=" top:40vh; text-align:center">
                   <a class="nav-link" id="aboutmebtn" onclick="scrollToAm()" >About me</a>
                   <div id="aboutmeline" style="position:fixed;"></div>
                 </li>
                 <br>
-                <li class="nav-item" style="top:50vh;">
+                <li class="nav-item" style="top:50vh;text-align:center">
                   <a class="nav-link"  id="projbtn" onclick="scrollToProj()">My Projects</a>
                   <div id="myprojline" style="position:fixed;"></div>
                 </li>
                 <br>
-                <li class="nav-item" style="top:60vh;">
+                <li class="nav-item" style="top:60vh;text-align:center">
                   <a class="nav-link" id="linksbtn" onclick="scrollToLinks()"">My Links</a>
                   <div id="mylinksline" style="position:fixed;"></div>
                 </li>
                 <br>
-                <li class="nav-item" style=" top:70vh;">
+                <li class="nav-item" style=" top:70vh;text-align:center">
                     <a class="nav-link" id="contactbtn" onclick="scrollToContact()">Contact me!</a>
                     <div id="contactmeline" style="position:fixed;"></div>
                 </li>
                 <br><br><br>
-                <p style="font-size:0.6em; text-align:center; margin-right:3vw;">Created solely by Sam Hughes</p>
+                <p style="font-size:0.5em; text-align:center;">Created by Sam Hughes</p>
               </ul>
             </div>
           </nav>
@@ -124,25 +136,25 @@
                     <a href="#">
                         <i class="fa fa-github fa-5x"></i>
                     </a>
-                    <p>Github</p>
+                    <p class="icontext">Github</p>
                     </div>
                 <div class="col-2"style="text-align:center;" >
                     <a href="#">
                         <i class="fa fa-twitter fa-5x"></i>
                     </a>
-                    <p>Twitter</p>
+                    <p class="icontext">Twitter</p>
                 </div>
                 <div class="col-2" style="text-align:center;">
                     <a href="#">
                         <i class="fa fa-linkedin fa-5x"></i>
                     </a>
-                    <p>LinkedIn</p>
+                    <p class="icontext">LinkedIn</p>
                     </div>
                 <div class="col-3" style="text-align:center;">
                     <a href="#">
                         <i class="fa fa-instagram fa-5x"></i>
                     </a>
-                    <p>Instagram</p>
+                    <p class="icontext">Instagram</p>
                     </div>
             </div>
         </div>
@@ -169,10 +181,10 @@
                     <button type="submit" class="btn btn-primary" id="submitform">Submit</button>
                   </form>
                 </div>
-                  <div class="col-3" style="margin-top:35vh; margin-left:50vw; position:absolute;">
-                    <span style="font-size:140%; text-align:center;">07763 406951<br></span>
+                  <div class="col-3" style="margin-top:39vh; margin-left:43vw; position:absolute;">
+                    <span style="font-size:1.2em; text-align:center;">07763 406951<br></span>
                     <p></p>
-                    <span style="font-size:140%;">Samhughes98@hotmail.co.uk</span>
+                    <span style="font-size:1.2em;">Samhughes98@hotmail.co.uk</span>
                   </div>
             </div>
         </div>
