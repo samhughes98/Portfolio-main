@@ -14,6 +14,7 @@
 <body>
 
     <div class="container-flex" id="desktopview">
+
     <div id="maincontent">
 
     </div>
@@ -28,6 +29,7 @@
         <div id="popup5" ><span style="line-height:35px;">View my Google</span></div>
         <div id="popup6" ><span style="line-height:35px;">View my Youtube</span></div>
     </div>
+
         <div id="socialsbar">
             <div class="icon-list">
                 <a href="https://github.com/samhughes98" id="instagram">
@@ -56,7 +58,7 @@
             </div>
           </div>
           
-
+        <div class="col-2">
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#2C394B;" id="navdiv">
             <div id="navtitle">   
                 <div>            
@@ -65,39 +67,40 @@
                         <div class="line"></div>
                         <div class="line" style="margin-top:5px;"></div>
                     </div> 
-                    <a class="navbar-brand" onclick="ScrollToHome()" style="font-size:150%; margin-left:10px; color:white;"> - My Portfolio -</a>
+                    <a class="navbar-brand" onclick="ScrollToHome()" style="font-size:1em; margin-left:10px; color:white;"> - My Portfolio -</a>
                 </div>
             </div>
           
             <div class="collapse navbar-collapse" id="navlinks">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav">
                 <br>
-                <li class="nav-item" style="position:fixed; top:40vh;">
-                  <a class="nav-link" id="aboutmebtn" onclick="scrollToAm()" style="margin-left:2vh;">About me</a>
+                <li class="nav-item" style=" top:40vh;">
+                  <a class="nav-link" id="aboutmebtn" onclick="scrollToAm()" >About me</a>
                   <div id="aboutmeline" style="position:fixed;"></div>
                 </li>
                 <br>
-                <li class="nav-item" style="position:fixed; top:50vh;">
-                  <a class="nav-link"  id="projbtn" onclick="scrollToProj()" style="margin-left:1.5vh;">My Projects</a>
+                <li class="nav-item" style="top:50vh;">
+                  <a class="nav-link"  id="projbtn" onclick="scrollToProj()">My Projects</a>
                   <div id="myprojline" style="position:fixed;"></div>
                 </li>
                 <br>
-                <li class="nav-item" style="position:fixed; top:60vh;">
-                  <a class="nav-link" id="linksbtn" onclick="scrollToLinks()" style="margin-left:3vh;">My Links</a>
+                <li class="nav-item" style="top:60vh;">
+                  <a class="nav-link" id="linksbtn" onclick="scrollToLinks()"">My Links</a>
                   <div id="mylinksline" style="position:fixed;"></div>
                 </li>
                 <br>
-                <li class="nav-item" style="position:fixed; top:70vh;">
-                    <a class="nav-link" id="contactbtn" onclick="scrollToContact()" style="margin-left:1vh;">Contact me!</a>
+                <li class="nav-item" style=" top:70vh;">
+                    <a class="nav-link" id="contactbtn" onclick="scrollToContact()">Contact me!</a>
                     <div id="contactmeline" style="position:fixed;"></div>
                 </li>
                 <br><br><br>
-                <p style="font-size:65%">Created solely by Sam Hughes</p>
+                <p style="font-size:0.6em; text-align:center; margin-right:3vw;">Created solely by Sam Hughes</p>
               </ul>
             </div>
           </nav>
+        </div>
           
-
+        <div class="col-10" style="height:100%; width:10vw;">
         <div id="aboutme" style="display:none">
             <p> Based in Worcestershire, England. </p>
             <br/><br/>
@@ -173,6 +176,7 @@
                   </div>
             </div>
         </div>
+    </div>
     </div>
 
 
