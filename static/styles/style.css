@@ -221,10 +221,10 @@ a {
   margin-top: 5vh;
 }
 
-#aboutmep2{
-  position:absolute;
-  margin-left:55vw;
-  margin-top:-58vh;
+#aboutmep2 {
+  position: absolute;
+  margin-left: 55vw;
+  margin-top: -58vh;
 }
 
 .icontext {
@@ -250,7 +250,7 @@ a {
 
 #mylinks {
   margin-left: 80px;
-  margin-top:10vh;
+  margin-top: 10vh;
   width: 84%;
   height: 100vh;
   position: absolute;
@@ -358,11 +358,11 @@ a {
 
 #scroller1 {
   height: 16vh;
-  width:30vw;
-  margin-left:50vw;
+  width: 30vw;
+  margin-left: 50vw;
   overflow: hidden;
-  color:white;
-  margin-top:62vh;
+  color: white;
+  margin-top: 62vh;
 }
 #scrollertext1 {
   right: 0;
@@ -385,111 +385,110 @@ a {
   }
 }
 
-#imgdiv1{
-  border:2px solid black; 
+#imgdiv1 {
+  border: 2px solid black;
   border-radius: 10px;
-  padding:0; 
-  height:100%;
-  overflow:hidden;
-  margin-left:-2.5vw;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  margin-left: -2.5vw;
 }
 
-#projimg1{
-  object-fit:cover; 
-  filter: blur(3px) sepia(100%) saturate(100%) brightness(70%) hue-rotate(180deg);
+#projimg1 {
+  object-fit: cover;
+  filter: blur(3px) sepia(100%) saturate(100%) brightness(70%)
+    hue-rotate(180deg);
   transition: all 0.25s ease-in;
 }
 
-#projimg1:hover{
-  filter:none;
+#projimg1:hover {
+  filter: none;
 }
 
-#img1caption{
-  display:none;
-  padding:2vw;
+#img1caption {
+  display: none;
+  padding: 2vw;
   text-align: center;
-  font-size:1.5em;
-  color:white;
-  margin-top:22vh;
-  margin-left:4vw;
-  border:#2c394b;
-  border-radius:10px;
+  font-size: 1.5em;
+  color: #e87121;
+  margin-top: 22vh;
+  margin-left: 4vw;
+  border: #2c394b;
+  border-radius: 10px;
   background: #2c394b;
-  position:absolute;
+  position: absolute;
   transition: all 2s ease-in;
 }
 
-#imgdiv2{
-  border:2px solid black; 
+#imgdiv2 {
+  border: 2px solid black;
   border-radius: 10px;
-  padding:0;
-  height:100%; 
-  overflow:hidden;
-  margin-left:1.2vw;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 1.2vw;
 }
 
-#projimg2{
-  object-fit:cover; 
-  filter: blur(3px) sepia(100%) saturate(100%) brightness(70%) hue-rotate(180deg);
+#projimg2 {
+  object-fit: cover;
+  filter: blur(3px) sepia(100%) saturate(100%) brightness(70%)
+    hue-rotate(180deg);
   transition: all 0.25s ease-in;
 }
 
-#img2caption{
-  display:none;
-  padding:2vw;
+#img2caption {
+  display: none;
+  padding: 2vw;
   text-align: center;
-  font-size:1.5em;
-  color:white;
-  margin-top:22vh;
-  margin-left:5vw;
-  border:#2c394b;
-  border-radius:10px;
-  background: #2c394b;
-  position:absolute;
-  transition: all 2s ease-in;
-}
-
-
-#projimg2:hover{
-  filter:none;
-}
-
-#imgdiv3{
-  border:2px solid black; 
+  font-size: 1.5em;
+  color: #e87121;
+  margin-top: 22vh;
+  margin-left: 5vw;
+  border: #2c394b;
   border-radius: 10px;
-  padding:0;
-  height:100%; 
-  overflow:hidden;
-  margin-left:1.2vw;
-}
-
-#img3caption{
-  display:none;
-  padding:2vw;
-  text-align: center;
-  font-size:1.5em;
-  color:white;
-  margin-top:22vh;
-  margin-left:2vw;
-  border:#2c394b;
-  border-radius:10px;
   background: #2c394b;
-  position:absolute;
+  position: absolute;
   transition: all 2s ease-in;
 }
 
+#projimg2:hover {
+  filter: none;
+}
 
-#projimg3{
-  object-fit:cover; 
-  filter: blur(3px) sepia(100%) saturate(100%) brightness(70%) hue-rotate(180deg);
+#imgdiv3 {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 1.2vw;
+}
+
+#img3caption {
+  display: none;
+  padding: 2vw;
+  text-align: center;
+  font-size: 1.5em;
+  color: #e87121;
+  margin-top: 22vh;
+  margin-left: 2vw;
+  border: #2c394b;
+  border-radius: 10px;
+  background: #2c394b;
+  position: absolute;
+  transition: all 2s ease-in;
+}
+
+#projimg3 {
+  object-fit: cover;
+  filter: blur(3px) sepia(100%) saturate(100%) brightness(70%)
+    hue-rotate(180deg);
   transition: all 0.25s ease-in;
 }
 
-#projimg3:hover{
-  filter:none;
+#projimg3:hover {
+  filter: none;
 }
-
-
 
 @keyframes imgexpand {
   0% {
@@ -500,6 +499,24 @@ a {
   }
 }
 
+#iconcolor {
+  animation: colorchanger 2s ease-in-out infinite;
+}
+
+@keyframes colorchanger {
+  0% {
+    color: #e87121;
+  }
+  40% {
+    color: #c04000;
+  }
+  80% {
+    color: #cc5500;
+  }
+  100% {
+    color: #e87121;
+  }
+}
 
 #socials-mobile,
 #mobilecontainer,
