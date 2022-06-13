@@ -226,4 +226,34 @@ function testScroll(ev) {
   }
 }
 
+var img1 = document.getElementById("projimg1");
+var img1caption = document.getElementById("img1caption");
+
+img1.onmouseover = function () {
+ img1caption.style.display = "block";
+};
+
+var img2 = document.getElementById("projimg2");
+var img2caption = document.getElementById("img2caption");
+
+img2.onmouseover = function () {
+ img2caption.style.display = "block";
+};
+
+
+var img3 = document.getElementById("projimg3");
+var img3caption = document.getElementById("img3caption");
+
+img3.onmouseover = function () {
+ img3caption.style.display = "block";
+};
+
+img1caption.style.display = "none";
+img2caption.style.display = "none";
+img3caption.style.display = "none";
+
+
+
+
+
 window.onscroll = testScroll;
