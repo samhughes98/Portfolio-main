@@ -199,8 +199,10 @@ const scrollToContact = () => {
 };
 
 function testScroll(ev) {
+  var scrollerarrows = document.getElementById("scroller1");
   if (window.pageYOffset > 700) {
     var aboutmediv = document.getElementById("aboutme");
+    scrollerarrows.style.display = "none";
     aboutmediv.style.display = "block";
   }
 
@@ -217,6 +219,10 @@ function testScroll(ev) {
   if (window.pageYOffset > 2600) {
     var contactmediv = document.getElementById("contactme");
     contactmediv.style.display = "block";
+  }
+
+  if(window.pageYOffset < 100){
+    scrollerarrows.style.display = "block";
   }
 }
 
