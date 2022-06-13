@@ -532,7 +532,9 @@ color: #c04000;
 #socials-mobile,
 #scroller,
 #scrollertext,
-#contactmebtn-mobile {
+#contactmebtn-mobile,
+#mobilerow,
+#mobilesep1 {
   display: none;
 }
 
@@ -546,12 +548,14 @@ color: #c04000;
   body {
     color: white;
     height: 100vh;
+    text-align:center;
   }
 
   #mobilecontainer {
     display: block;
     height: 28vh;
     text-align: center;
+    justify-content: center;
   }
 
   #logo1 {
@@ -575,7 +579,7 @@ color: #c04000;
     margin-top: 5vh;
     color: white;
     font-size: 100%;
-    margin-left: 5vw;
+    margin-left: 0vw;
   }
 
   #mobilebar {
@@ -719,4 +723,16 @@ color: #c04000;
 #msgfield {
   width: 40vw;
   height: 40vh;
+}
+
+#mobilerow{
+  display:block;
+}
+
+#mobilesep1{
+  display:block;
+  position:absolute;
+  border-top: 2px solid #e87121;
+  width:150vw;
+  margin-top:2vh;
 }
