@@ -406,20 +406,17 @@ a {
 
 
 #img1caption {
-  display: none;
-  padding-top:4px;
+  display: block;
+  padding-top:9vh;
   text-align: center;
   font-size: 1em;
   width:15vw;;
   height:6vh;
-  color: #e87121;
+  color: white;
   margin-top:21vh;
   margin-left: 5vw;
-  border: 2px solid black;
   border-radius: 10px;
-  background: #2c394b;
   position: absolute;
-  transition: all 2s ease-in;
 }
 
 #imgdiv2 {
@@ -445,14 +442,10 @@ a {
   font-size: 1em;
   width:15vw;;
   height:6vh;
-  color: #e87121;
-  margin-top:21vh;
+  color: white;
+  margin-top:30vh;
   margin-left: 5vw;
-  border: 2px solid black;
-  border-radius: 10px;
-  background: #2c394b;
   position: absolute;
-  transition: all 2s ease-in;
 }
 
 #projimg2:hover {
@@ -475,14 +468,10 @@ a {
   font-size: 1em;
   width:15vw;;
   height:6vh;
-  color: #e87121;
-  margin-top:21vh;
+  color: white;
+  margin-top:30vh;
   margin-left: 5vw;
-  border: 2px solid black;
-  border-radius: 10px;
-  background: #2c394b;
   position: absolute;
-  transition: all 2s ease-in;
 }
 
 #projimg3 {
@@ -513,6 +502,7 @@ a {
   filter: blur(2px) sepia(100%) saturate(100%) brightness(70%)
     hue-rotate(180deg);
   transition: all 0.25s ease-in;
+  overflow: auto;
 }
 
 #projimg4:hover {
@@ -521,19 +511,14 @@ a {
 
 #img4caption {
   display: block;
-  padding-top:4px;
   text-align: center;
   font-size: 1em;
   width:15vw;;
   height:6vh;
-  color: #e87121;
-  margin-top: 20vh;
+  color: white;
+  margin-top: 35vh;
   margin-left: 5vw;
-  border: 2px solid black;
-  border-radius: 10px;
-  background: #2c394b;
   position: absolute;
-  transition: all 2s ease-in;
 }
 
 #img1caption, #img2caption, #img3caption, #img4caption {
